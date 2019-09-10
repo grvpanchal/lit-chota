@@ -1,4 +1,6 @@
 # lit-chota
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/lit-chota)
+[![npm version](https://badge.fury.io/js/lit-chota.svg)](https://badge.fury.io/js/lit-chota)
 
 Chota CSS Framework for lit-element
 
@@ -133,4 +135,3 @@ Note: Make sure node resolver is turned on on es-dev-server or webpack
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
-

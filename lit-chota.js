@@ -25,8 +25,8 @@ export default class litChota {
   static load(scope, styles) {
     let stylePromises = [];
     const currentSheets = ['card', 'form', 'grid', 'nav', 'tab', 'tag', 'util'];
-
-    styles.forEach(style => currentSheets.includes(style) ? stylePromises.push(dimport('./dist/' + style + '.js')) : '');
+    const resolvePath = './node_modules/lit-chota';
+    styles.forEach(style => currentSheets.includes(style) ? stylePromises.push(dimport(resolvePath + '/dist/' + style + '.js')) : '');
 
     Promise.all(stylePromises).then((CSSheets) => {
       CSSheets.forEach((CSSheet, i) => {
