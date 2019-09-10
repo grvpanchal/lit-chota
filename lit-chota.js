@@ -2,19 +2,21 @@ import dimport from 'dimport';
 import { base } from './dist/base.js';
 
 function loadStyles(base) {
-  const styles = base;
+  if(document.getElementById('chota-base') === null) {
+    const styles = base;
 
-  let css = document.createElement('style');
-  css.type = 'text/css';
+    let css = document.createElement('style');
+    css.type = 'text/css';
+    css.id = 'chota-base';
+    if (css.styleSheet){
+      css.styleSheet.cssText = styles;
+    } else {
+      css.appendChild(document.createTextNode(styles));
+    }
 
-  if (css.styleSheet){
-    css.styleSheet.cssText = styles;
-  } else {
-    css.appendChild(document.createTextNode(styles));
+    let headTag = document.getElementsByTagName("head")[0];
+    headTag.appendChild(css);
   }
-
-  let headTag = document.getElementsByTagName("head")[0];
-  headTag.appendChild(css);
 }
 
 loadStyles(base);

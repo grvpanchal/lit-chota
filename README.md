@@ -96,18 +96,18 @@ class ChotaTest extends LitElement {
 
 customElements.define('chota-test', ChotaTest);
 ```
-OR Import CSS directly
+OR Import CSS Sheet directly
 
 ```javascript
 import { LitElement, html, css } from 'lit-element';
-import 'lit-chota';
+import 'lit-chota'; // <-- Only do this once in entire project to register variables
 import grid from 'lit-chota/dist/grid';
 
 class ChotaTest extends LitElement {
 
   static get styles() {
     return [
-      grid, // Place you CSS Sheets here
+      grid, // <-- Place you CSS Sheets here
       css`
       :host {
         display: block;
