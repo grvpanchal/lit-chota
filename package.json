@@ -1,0 +1,41 @@
+{
+  "name": "lit-chota",
+  "version": "0.0.1",
+  "description": "Chota CSS Framework for lit-element",
+  "main": "lit-chota.js",
+  "module": "lit-chota.js",
+  "scripts": {
+    "build": "rimraf dist/* && node ./bin/get-source.js",
+    "serve": "es-dev-server --node-resolve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "lit-chota.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grvpanchal/lit-chota.git"
+  },
+  "keywords": [
+    "css",
+    "lit-html",
+    "lit-element",
+    "css-framework",
+    "css3"
+  ],
+  "author": "Gaurav Panchal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grvpanchal/lit-chota/issues"
+  },
+  "homepage": "https://github.com/grvpanchal/lit-chota#readme",
+  "devDependencies": {
+    "chota": "^0.6.2"
+  },
+  "dependencies": {
+    "dimport": "^1.0.0",
+    "lit-element": "^2.2.1"
+  }
+}
