@@ -1,6 +1,6 @@
 {
   "name": "lit-chota",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Chota CSS Framework for lit-element",
   "main": "lit-chota.js",
   "module": "lit-chota.js",
