@@ -135,3 +135,7 @@ Note: Make sure node resolver is turned on on es-dev-server or webpack
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
+
+## Authors
+- Chota micro CSS framework is developed by Jenil Gogari
+- Lit Element is brought to you by The Polymer Project
